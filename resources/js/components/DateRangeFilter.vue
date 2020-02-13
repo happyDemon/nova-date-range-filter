@@ -94,7 +94,8 @@ export default {
           }
       })
       const wrapper = document.querySelector('.dropdown-menu div')
-      wrapper.classList.remove('overflow-hidden')
+
+      if(typeof wrapper !== "undefined" && wrapper != null) wrapper.classList.remove('overflow-hidden')
     })
   },
 
